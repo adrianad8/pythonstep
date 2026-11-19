@@ -7,8 +7,8 @@
 # В “it is amazing” символ “і” зустрічається 3 рази
 
 # 1 way
-# text= str(input("Say something: "))
-# symbol=str(input("What symbol do you want to count: "))
+# text = (input("Say something: "))
+# symbol = (input("What symbol do you want to count: "))
 
 
 # number_symbol = text.count(symbol)
@@ -17,8 +17,8 @@
 
 # 2 way
 
-text = str(input("Say something: "))
-symbol = str(input("What symbol do you want to count: "))
+text = input("Say something: ")
+symbol = input("What symbol do you want to count: ")
 
 count = 0
 
