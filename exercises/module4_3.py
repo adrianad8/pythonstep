@@ -75,7 +75,7 @@ while True:
         if number2 == 0:
             print("Error: you cannot divide by zero. Enter another number")
         else:
-            print("number1 // number2")
+            print(number1 // number2)
 
     elif option == 5:
         break
