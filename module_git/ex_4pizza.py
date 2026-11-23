@@ -5,18 +5,19 @@ FOURCHEESE_PRICE = 200
 margharita_quantity = 0
 pepperoni_quantity = 0
 fourcheese_quantity = 0
+total_quantity = 0
 
 margharita_name = "Margharita"
 pepperoni_name = "Pepperoni"
 fourcheese_name = "Four cheese"
 
-print("Menu:")
-print("1- Chose pizza")
-print("2- Exit")
-print("3- Show order")
-
 
 while True:
+    print("Menu:")
+    print("1- Chose pizza")
+    print("2- Exit")
+    print("3- Show order")
+
     option = int(input("Chose what to do: "))
 
     if option == 1:
@@ -25,7 +26,21 @@ while True:
         print("3.- Four cheese/200 hryvnia")
 
         select_pizza = int(input("What pizza do you want: "))
+
+        if select_pizza != 1 and select_pizza != 2 and select_pizza != 3:
+            print("Incorrect option")
+            continue
+
         quantity = int(input("How many: "))
+
+        total_quantity += quantity
+
+        if quantity < 0:
+            print("Error, it can't be negative.")
+            continue
+        if total_quantity + quantity > 15:
+            print("You can't order more than 15 pizzas")
+            continue
 
         if select_pizza == 1:
             margharita_quantity += quantity
@@ -36,9 +51,6 @@ while True:
         elif select_pizza == 3:
             fourcheese_quantity += quantity
             print(f"You have ordered {quantity} {fourcheese_name}")
-        else:
-            print("Incorrect name")
-            continue
 
     elif option == 2:
         break
