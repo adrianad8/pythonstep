@@ -43,10 +43,58 @@
 # речення(закінчується на .!?)
 
 
+# line = input("Enter a phrase: ")
+
+# if line[-1] == "." or line[-1] == "!" or line[-1] == "?":
+#     print("This is a phrase that ends with !?.")
+
+# else:
+#     print("This phrase doesn't end in .!?")
+
+
+# Користувач вводить рядок. Перевірте чи перший
+# символ – це велика літера. Виправіть помилку в коді
+
+
+# text = input("Введіть рядок: ").lower()
+
+# if text[0].isupper():
+#     print("Перший символ — велика літера")
+# else:
+#     print("Перший символ — не велика літера")
+
+
+# Користувач вводить рядок. Перевірте чи це
+# паліндром(читається задом наперед так само).
+# Приклади: Кіт утік, око, потоп
+
+
+# text = input("Enter something: ")
+
+# if text == text[::-1]:
+#     print("It's a palindrom")
+
+# else:
+#     print("Not a palindrom")
+
+
+# Користувач вводить рядок та символ. Виведіть індекс
+# цього символу.
+
+
+# line = input("Enter a phrase: ")
+
+# symbol = input("Enter a symbol: ")
+
+# index = line.find(symbol)
+
+# print(index)
+
+
+# Користувач вводить рядок та символ. Виведіть усі
+# індекси цього символу, якщо він зустрічається декілька
+# разів.
+
+
 line = input("Enter a phrase: ")
-
-if line[-1] == "." or line[-1] == "!" or line[-1] == "?":
-    print("This is a phrase that ends with !?.")
-
-else:
-    print("This phrase doesn't end in .!?")
+symbol = input("Enter a symbol: ")
