@@ -45,7 +45,7 @@
 
 # line = input("Enter a phrase: ")
 
-# if line[-1] == "." or line[-1] == "!" or line[-1] == "?":
+# if line[-1] in ".!?":
 #     print("This is a phrase that ends with !?.")
 
 # else:
@@ -56,7 +56,7 @@
 # символ – це велика літера. Виправіть помилку в коді
 
 
-# text = input("Введіть рядок: ").lower()
+# text = input("Введіть рядок: ")
 
 # if text[0].isupper():
 #     print("Перший символ — велика літера")
@@ -70,6 +70,7 @@
 
 
 # text = input("Enter something: ")
+# text = text.lower().replace(" ","")
 
 # if text == text[::-1]:
 #     print("It's a palindrom")
